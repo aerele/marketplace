@@ -162,7 +162,7 @@ order:
    release's `branch` and `commit`, which benches download instead of
    building. Publish them with Pilot's `app-assets.yml` workflow on every
    branch you release from (see
-   [gameplan's workflow](https://github.com/frappe/gameplan/blob/develop/.github/workflows/assets.yml)),
+   [Pilot's setup guide](https://github.com/frappe/pilot/blob/develop/docs/prebuilt-assets.md)),
    and open the PR after the workflow run for that commit has finished.
 
 ### Reading the results
