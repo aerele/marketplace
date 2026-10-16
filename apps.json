@@ -1883,5 +1883,20 @@
     "category": "Integrations",
     "stars": 0,
     "releases": "apps/bwh_payments.json"
+  },
+  {
+    "name": "kamra",
+    "title": "Kamra PMS",
+    "description": "Open-source property management system for hotels and short-term rentals",
+    "repo": "https://github.com/Kamra-PMS/kamra-pms",
+    "logo_url": "https://raw.githubusercontent.com/Kamra-PMS/kamra-pms/main/branding/png/kamra-mark-512.png",
+    "website": "https://kamrapms.com",
+    "documentation": "https://kamrapms.com/docs/",
+    "categories": [
+      "Hospitality"
+    ],
+    "category": "Applications",
+    "stars": 0,
+    "releases": "apps/kamra.json"
   }
 ]
