@@ -36,7 +36,7 @@ from pilot.integrations.git.github import parse_github_owner_repo
 from pilot.managers.environment import PythonEnvManager
 
 FRAPPE_REPO = "https://github.com/frappe/frappe"
-ASSETS_WORKFLOW_EXAMPLE = "https://github.com/frappe/gameplan/blob/develop/.github/workflows/assets.yml"
+ASSETS_SETUP_GUIDE = "https://github.com/frappe/pilot/blob/develop/docs/prebuilt-assets.md"
 
 
 def frappe_branch_for(frappe_core: str) -> str:
@@ -142,7 +142,7 @@ class GetAppValidator(Validator):
         except urllib.error.HTTPError:
             self.fail(
                 f"No prebuilt assets published for {branch}@{commit[:8]}. Run Pilot's app-assets "
-                f"workflow on pushes to {branch} (example: {ASSETS_WORKFLOW_EXAMPLE}) and open "
+                f"workflow on pushes to {branch} (setup guide: {ASSETS_SETUP_GUIDE}) and open "
                 "the PR once it has finished"
             )
         except urllib.error.URLError as exc:
